@@ -153,15 +153,25 @@ img {
 }
 
 .nav__brand {
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text);
+  display: inline-flex;
+  align-items: center;
   flex-shrink: 0;
-  text-transform: uppercase;
+  line-height: 0;
+  color: var(--text);
 }
 
-.nav__brand:hover {
-  color: var(--accent);
+.nav__brand-logo {
+  height: 2.35rem;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.nav__brand:hover .nav__brand-logo {
+  opacity: 0.92;
+  filter: brightness(1.08);
 }
 
 .nav__toggle {
